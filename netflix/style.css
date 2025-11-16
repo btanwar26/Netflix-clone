@@ -1,0 +1,382 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    background: url(./assets/images/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px,100vw);
+    height: 120vh;
+    /* height: ; */
+    position: relative;
+}
+
+header .box{
+    background-color: black;
+    opacity: 0.64;
+    height: 120vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+nav{
+    max-width: 70vw;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    /* flex direction */
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img{
+    color: red;
+    width: 160px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+header .text{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    position: relative;
+    z-index: 10;
+    gap: 20px;
+    padding: 0 30px;
+}
+
+header .text> :nth-child(1){
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+/* > is used so that styling is applied to only immediate first child */
+header .text> :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+header .text> :nth-child(3){
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.text-btn{
+    display: flex;
+    flex-direction: row;
+    /* flex direction */
+    gap: 10px;
+    align-items: center;
+
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight: 400;
+    background-color: white;
+    border-radius: 5px;
+    border: none;
+    height: 35px;
+    width: 130px;
+    cursor: pointer;
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 22px;
+    height: 45px;
+    width: 200px;
+}
+
+input{
+    padding: 11px 116px 10px 11px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: rgba(23,23,23,0.7);
+    border: 0.3px solid rgb(127, 127, 127);
+    font-size: 15px;
+}
+
+input::placeholder{
+    color: rgb(193, 192, 192);
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    width: 70px;
+}
+
+.btn-ln{
+    background-color: rgba(23,23,23,0.7);
+    border: 0.3px solid rgb(127, 127, 127);
+    color: white;
+    font-size: 15px;
+}
+
+.first{
+    display: flex;
+    flex-direction: row;
+    max-width: 75vw;
+    /* height */
+    /* height: max(80vh,fit-content); */
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.secImg{
+    position: relative;
+}
+
+.secImg img{
+    width: 455px;
+    /* width */
+    z-index: 10;
+    position: relative;
+}
+
+.secImg video{
+    position: absolute;
+    right: 53px;
+    height: 255px;
+    /* top: 39px; */
+    top: 64px;
+    width: 342px 
+}
+
+.first> div{
+    padding: 30px 0;
+}
+
+.first> div :nth-child(1){
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.first> div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.second> div :nth-child(1){
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.second> div :nth-child(2){
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.third video{
+    right: 91px;
+    height: 229px;
+    /* top: 8px; */
+    top: 38px;
+    width: 287px; 
+}
+
+section.faq{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 0 0 60px 0;
+}
+
+.faq h2{
+    font-size: 48px;
+    padding: 50px 20px 10px 20px;
+}
+
+.faqbox{
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 24px;
+    background-color: rgb(45, 44, 44);
+    padding: 34px;
+    width: 70vw;
+    height: 2vh;
+    cursor: pointer;
+}
+
+.faqbox:hover{
+    background-color: rgb(81, 81, 81);
+}
+
+.faqbox img{
+    height: 40px;
+    width: 40px;
+    filter: invert(1);
+}
+
+.faq> span{
+    font-size: 20px;
+    padding: 40px 20px 10px 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer{
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 70vw;
+    margin: auto;
+    padding: 30px;
+    font-size: 15px;
+}
+
+.footer .questions{
+    padding: 28px 0;
+}
+
+.footer a{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 0 0 20px 0;
+    gap: 10px;
+}
+
+.grid p{
+    padding: 0 0 10px 0;
+}
+
+.footer> p:last-child{
+    padding: 20px 0;
+}
+
+@media screen and (max-width:768px){
+    .first, .text-btn{
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        /* margin: auto; */
+    }
+    .first> div :nth-child(1){
+        font-size: 28px;
+        font-weight: 600;
+       
+    }
+    
+    .first> div :nth-child(2){
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .first h1{
+        padding-bottom: 5px;
+    }
+
+    .grid{
+        grid-template-columns: 2fr 1fr;
+        gap: 0;
+    }
+    .secImg img{
+        width: 325px;
+    }
+    .secImg video{
+        position: absolute;
+        right: 24px;
+        height: 140px;
+        top: 74px;
+        width: 268px;
+    }
+    .third video{
+        right: 61px;
+        height: 193px;
+        top: 24px;
+        width: 212px;
+    }
+    .second, .fourth{
+        flex-direction: column-reverse;
+    }
+    .faq h2{
+        text-align: center;
+        font-size: 30px;
+    }
+    .grid p{
+        padding: 0 0 10px 0;
+    }
+    .footer{
+        padding: 0;
+        margin: 0 20px;
+        max-width: 86vw;
+    }
+    .footer .questions{
+        padding: 20px 0;
+    }
+    header{
+        height: 61vh;
+    }
+    nav{
+        height: 70px;
+        max-width: 80vw;
+    }
+    nav img{
+        width: 74px;
+    }
+    nav .btn{
+        height: 32px;
+        width: 77px;
+    }
+    nav .btn-red-sm{
+        width: 65px;
+    }
+    header .text{
+        height: calc(100% - 70px);
+    }
+    header .text> :nth-child(1){
+        font-size: 30px;
+        font-weight: 600;
+    }
+    header .text> :nth-child(2){
+        font-size: 18px;
+    }
+    header .text> :nth-child(3){
+        font-size: 18px;
+    }
+    
+}
